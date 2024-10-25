@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advice Generator App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <div class="advice-container">
+            <p class="advice-id">ADVICE #<span id="advice-number"></span></p>
+            <h1 class="advice-text" id="advice-text"></h1>
+            
+            <div class="divider">
+                <!-- Mobile divider -->
+                <img class="divider-mobile" src="pattern-divider-mobile.svg" alt="Divider">
+                <!-- Desktop divider -->
+                <img class="divider-desktop" src="pattern-divider-desktop.svg" alt="Divider">
+            </div>
+            
+            <button id="dice-btn" class="dice-button">
+                <img src="icon-dice.svg" alt="Dice icon">
+            </button>
+        </div>
+        <footer class="footer">
+          <small class="footer-text">
+              Developed by 
+              <a href="https://saadb.me" title="come say hi!" class="footer-link">
+                  saadb
+              </a>
+          </small>
+      </footer>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

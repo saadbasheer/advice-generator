@@ -1,0 +1,134 @@
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    color: var(--light-cyan);
+    background-color: var(--dark-blue);
+    min-height: 100vh;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 60px;
+}
+
+.advice-container {
+    background-color: var(--dark-grayish-blue);
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 90%;
+    width: 540px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.advice-id {
+    color: var(--neon-green);
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.advice-text {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.divider {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-desktop {
+    display: none;
+}
+
+.dice-button {
+    background-color: var(--neon-green);
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.dice-button:hover {
+    box-shadow: 0 0 40px rgba(82, 255, 168, 0.5);
+}
+
+.dice-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.footer-text {
+    font-weight: 300;
+    white-space: nowrap;
+    color: #9ca3af;
+    font-size: 10px;
+}
+
+.footer-link {
+    text-decoration: underline;
+    color: #9ca3af;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--neon-green);
+}
+
+@media (min-width: 640px) {
+    .advice-container {
+        padding: 3rem;
+    }
+
+    .advice-id {
+        font-size: 13px;
+        letter-spacing: 4px;
+        margin-bottom: 1.5rem;
+    }
+
+    .advice-text {
+        font-size: 28px;
+        margin-bottom: 2rem;
+    }
+
+    .divider-mobile {
+        display: none;
+    }
+
+    .divider-desktop {
+        display: block;
+    }
+}
